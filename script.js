@@ -1,11 +1,11 @@
-// JavaScript文件中的代码
+// JavaScript code in the script file
 
-// 动态添加教育背景
+// Dynamically add education background
 const educationList = document.getElementById('education-list');
 const educationData = [
     { date: 'Sep 2021 -- Present', degree: 'Master of Engineering', school: 'Zhengzhou University', location: 'Zhengzhou, China', major: 'Computer Science and Technology', gpa: '3.91/4.3' },
     { date: 'Sep 2017 -- Jul 2021', degree: 'Bachelor of Engineering', school: 'Zhengzhou University', location: 'Zhengzhou, China', major: 'Software Engineering (Outstanding Engineer Program, Ministry of Education)', gpa: '3.61/4.0' },
-    // 添加更多教育背景数据
+    // Add more education background data
 ];
 
 educationData.forEach(item => {
@@ -19,7 +19,7 @@ educationData.forEach(item => {
     educationList.appendChild(listItem);
 });
 
-// 动态添加主要出版物
+// Dynamically add major publications
 const publicationsList = document.getElementById('publications-list');
 const publicationsData = [
     {
@@ -36,7 +36,7 @@ const publicationsData = [
         year: "2023",
         doi: "10.1109/TMC.2023.3310591"
     },
-    // 添加更多出版物数据
+    // Add more publication data
 ];
 
 publicationsData.forEach(item => {
