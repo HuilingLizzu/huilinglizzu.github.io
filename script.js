@@ -1,26 +1,17 @@
 // JavaScript文件中的代码
-// 选择简介部分的DOM元素
-const profile = document.querySelector('.profile');
-const education = document.querySelector('.education');
 
-// 隐藏教育背景部分
-education.style.display = 'none';
+// 在这里添加任何你需要的JavaScript交互和动态内容
 
-// 添加“显示/隐藏教育背景”按钮
-const toggleButton = document.createElement('button');
-toggleButton.textContent = '显示教育背景';
-toggleButton.classList.add('toggle-button');
+// 例如，一个简单的滚动到顶部的按钮
+const scrollToTopButton = document.createElement('button');
+scrollToTopButton.textContent = '返回顶部';
+scrollToTopButton.classList.add('scroll-to-top');
 
-// 监听按钮点击事件
-toggleButton.addEventListener('click', () => {
-    if (education.style.display === 'none') {
-        education.style.display = 'block';
-        toggleButton.textContent = '隐藏教育背景';
-    } else {
-        education.style.display = 'none';
-        toggleButton.textContent = '显示教育背景';
-    }
+scrollToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
 
-// 将按钮添加到简介部分
-profile.appendChild(toggleButton);
+document.body.appendChild(scrollToTopButton);
