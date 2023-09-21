@@ -23,7 +23,7 @@ header {
 /* 调整个人图片的放置风格 */
 .profile-image-container {
     width: 100%;
-    max-width: 200px; /* 限制图片的最大宽度，可以根据需要调整 */
+    max-width: 200px; /* 限制图片的最大宽度 */
     margin: 0 auto;
     padding-top: 150%; /* 3:4 比例图片的高度计算（4 / 3 * 100%） */
     position: relative;
@@ -33,7 +33,7 @@ header {
 .profile-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 保持图片比例并填充容器 */
+    object-fit: contain; /* 调整图片适应容器，可能会显示部分空白 */
     position: absolute;
     top: 0;
     left: 0;
