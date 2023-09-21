@@ -1,35 +1,26 @@
-/* 样式文件中的样式 */
-.main {
-    /* 添加整体页面样式 */
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
+// JavaScript文件中的代码
+// 选择简介部分的DOM元素
+const profile = document.querySelector('.profile');
+const education = document.querySelector('.education');
 
-.profile {
-    display: flex;
-    align-items: center;
-}
+// 隐藏教育背景部分
+education.style.display = 'none';
 
-.profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-    object-fit: cover;
-}
+// 添加“显示/隐藏教育背景”按钮
+const toggleButton = document.createElement('button');
+toggleButton.textContent = '显示教育背景';
+toggleButton.classList.add('toggle-button');
 
-.bio {
-    flex: 1;
-}
+// 监听按钮点击事件
+toggleButton.addEventListener('click', () => {
+    if (education.style.display === 'none') {
+        education.style.display = 'block';
+        toggleButton.textContent = '隐藏教育背景';
+    } else {
+        education.style.display = 'none';
+        toggleButton.textContent = '显示教育背景';
+    }
+});
 
-.education {
-    margin-top: 20px;
-}
-
-.education h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-/* 可根据需要继续自定义样式 */
-
+// 将按钮添加到简介部分
+profile.appendChild(toggleButton);
