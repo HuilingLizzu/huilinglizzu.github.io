@@ -22,17 +22,21 @@ header {
 
 /* 调整个人图片的放置风格，适合横纵比3:4的图片 */
 .profile-image-container {
-    width: 150px;
-    height: 200px; /* 调整高度以保持3:4比例 */
-    border-radius: 50%;
+    width: 30%; /* 设置图片容器的宽度相对于页面宽度 */
+    max-width: 150px; /* 限制图片的最大宽度 */
     margin-bottom: 10px;
     overflow: hidden;
+    position: relative;
+    padding-top: 133.33%; /* 3:4 比例图片的高度计算（4 / 3 * 100%） */
 }
 
 .profile-image {
     width: 100%;
     height: 100%;
     object-fit: cover; /* 使图片填满容器，可能会裁剪部分 */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 nav ul {
