@@ -1,22 +1,29 @@
 // JavaScript文件中的代码
 
-// 获取导航链接
-const navLinks = document.querySelectorAll('nav a');
+// 动态添加教育背景
+const educationList = document.getElementById('education-list');
+const educationData = [
+    { degree: '博士', school: '大学1', year: '20XX' },
+    { degree: '硕士', school: '大学2', year: '20XX' },
+    // 添加更多教育背景数据
+];
 
-// 为每个导航链接添加点击事件监听器
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault(); // 阻止默认链接行为
+educationData.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${item.degree} - ${item.school}, ${item.year}`;
+    educationList.appendChild(listItem);
+});
 
-        const targetId = link.getAttribute('href').substring(1); // 获取目标部分的ID
-        const targetSection = document.getElementById(targetId); // 获取目标部分的元素
+// 动态添加出版物
+const publicationsList = document.getElementById('publications-list');
+const publicationsData = [
+    { title: '论文1', authors: '作者1', publicationDate: '2023-01-15' },
+    { title: '论文2', authors: '作者2', publicationDate: '2022-11-20' },
+    // 添加更多出版物数据
+];
 
-        if (targetSection) {
-            // 使用滚动行为平滑滚动到目标部分
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: 'smooth',
-            });
-        }
-    });
+publicationsData.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = `<strong>${item.title}</strong> - ${item.authors}, ${item.publicationDate}`;
+    publicationsList.appendChild(listItem);
 });
