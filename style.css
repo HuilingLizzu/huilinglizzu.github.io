@@ -20,15 +20,33 @@ header {
     align-items: center;
 }
 
+/* 调整个人图片的放置风格 */
+.profile-image-container {
+    width: 100%;
+    max-width: 200px; /* 限制图片的最大宽度，可以根据需要调整 */
+    margin: 0 auto;
+    padding-top: 133.33%; /* 3:4 比例图片的高度计算（4 / 3 * 100%） */
+    position: relative;
+    overflow: hidden;
+}
+
 .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持图片比例并填充容器 */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 24px;
 }
 
 nav ul {
     list-style: none;
+    margin-top: 10px;
 }
 
 nav ul li {
@@ -61,6 +79,7 @@ main {
 h2 {
     margin-top: 20px;
     color: #333;
+    font-size: 20px;
 }
 
 p {
