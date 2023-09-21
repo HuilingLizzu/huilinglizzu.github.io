@@ -20,11 +20,19 @@ header {
     align-items: center;
 }
 
-.profile-image {
+/* 调整个人图片的放置风格，适合横纵比3:4的图片 */
+.profile-image-container {
     width: 150px;
-    height: 150px;
+    height: 200px; /* 调整高度以保持3:4比例 */
     border-radius: 50%;
     margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 使图片填满容器，可能会裁剪部分 */
 }
 
 nav ul {
