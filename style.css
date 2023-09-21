@@ -8,8 +8,8 @@ body, h1, h2, p, ul, a {
 
 /* Apply styles to the header */
 header {
-    background-color: #333; /* 背景颜色修改为灰色 */
-    color: #fff;
+    background-color: #fff; /* 背景颜色设置为白色 */
+    color: #333; /* 字体颜色设置为黑色 */
     text-align: center;
     padding: 20px 0;
 }
@@ -60,7 +60,7 @@ nav ul li:last-child {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #333; /* 导航链接颜色设置为黑色 */
     font-weight: bold;
     font-size: 18px;
 }
