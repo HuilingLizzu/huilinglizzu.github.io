@@ -37,3 +37,28 @@ section {
 }
 
 /* 其他样式根据需要添加 */
+
+/* 导航栏样式 */
+nav {
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 添加悬停效果 */
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
