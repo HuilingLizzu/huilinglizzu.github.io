@@ -49,4 +49,26 @@ const publicationsData = [
         pages: "4921-4925"
     },
     {
-        title: "Human-in-the-loop Real-time Task
+        title: "Human-in-the-loop Real-time Task Allocation",
+        authors: "Huiling Li, Lei Gao, Hua Wang, Mingliang Xu, Yafei Li",
+        conference: "Proceedings of the IEEE Conference on Mobile Data Management (MDM), MUST Workshop",
+        year: "2022",
+        pages: "518-523"
+    }
+    // Add more publication data
+];
+
+publicationsData.forEach(item => {
+    if (item.status !== "Minor Revision") { // Exclude publications with "Minor Revision" status
+        const listItem = document.createElement('li');
+        listItem.innerHTML = `
+            <strong>${item.title}</strong><br>
+            Authors: ${item.authors}<br>
+            ${item.journal ? `Journal: ${item.journal}<br>` : ''}
+            ${item.conference ? `Conference: ${item.conference}<br>` : ''}
+            ${item.pages ? `Pages: ${item.pages}<br>` : ''}
+            Year: ${item.year}<br>
+        `;
+        publicationsList.appendChild(listItem);
+    }
+});
