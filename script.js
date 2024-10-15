@@ -64,8 +64,8 @@ publicationsData.forEach(item => {
     }
 });
 
-const pdfLink = document.createElement('li');
-pdfLink.innerHTML = `
-    <strong>Effective Task Assignment in Mobility Prediction-\\Aware Spatial Crowdsourcing (Technical Report):</strong> <a href="papers/ICDE25.pdf" target="_blank">ICDE25.pdf</a>
-`;
-publicationsList.appendChild(pdfLink);
+// const pdfLink = document.createElement('li');
+// pdfLink.innerHTML = `
+//     <strong>Effective Task Assignment in Mobility Prediction-\\Aware Spatial Crowdsourcing (Technical Report):</strong> <a href="papers/ICDE25.pdf" target="_blank">ICDE25.pdf</a>
+// `;
+// publicationsList.appendChild(pdfLink);
