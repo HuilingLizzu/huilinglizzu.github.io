@@ -4,7 +4,7 @@
 const educationList = document.getElementById('education-list');
 const educationData = [
     { date: 'Sep 2021 -- Present', degree: 'Master of Engineering', school: 'Zhengzhou University', location: 'Zhengzhou, China', major: 'Computer Science and Technology' },
-    { date: 'Sep 2017 -- Jul 2021', degree: 'Bachelor of Engineering', school: 'Zhengzhou University', location: 'Zhengzhou, China', major: 'Software Engineering (Outstanding Engineer Program, Ministry of Education)' },
+    { date: 'Sep 2017 -- Jul 2021', degree: 'Bachelor of Engineering', school: 'Zhengzhou University', location: 'Zhengzhou, China', major: 'Software Engineering' },
     // Add more education background data
 ];
 
@@ -66,6 +66,6 @@ publicationsData.forEach(item => {
 
 const pdfLink = document.createElement('li');
 pdfLink.innerHTML = `
-    <strong>View Paper:</strong> <a href="papers/ICDE25.pdf" target="_blank">ICDE25.pdf</a>
+    <strong>Effective Task Assignment in Mobility Prediction-\\Aware Spatial Crowdsourcing (Technical Report):</strong> <a href="papers/ICDE25.pdf" target="_blank">ICDE25.pdf</a>
 `;
 publicationsList.appendChild(pdfLink);
