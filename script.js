@@ -63,3 +63,9 @@ publicationsData.forEach(item => {
         publicationsList.appendChild(listItem);
     }
 });
+
+const pdfLink = document.createElement('li');
+pdfLink.innerHTML = `
+    <strong>View Paper:</strong> <a href="papers/ICDE25.pdf" target="_blank">ICDE25.pdf</a>
+`;
+publicationsList.appendChild(pdfLink);
