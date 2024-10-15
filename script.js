@@ -23,6 +23,12 @@ const publicationsList = document.getElementById('publications-list');
 const publicationsData = [
     {
         title: "Utility-Aware Dynamic Ridesharing in Spatial Crowdsourcing",
+        authors: "<strong>Huiling Li</strong>, Xin Huang, Jianliang Xu, Yu Han, Mingliang Xu",
+        journal: "IEEE Transactions on Mobile Computing (TMC)",
+        year: "2022"
+    },
+    {
+        title: "Utility-Aware Dynamic Ridesharing in Spatial Crowdsourcing",
         authors: "Yafei Li, <strong>Huiling Li</strong>, Xin Huang, Jianliang Xu, Yu Han, Mingliang Xu",
         journal: "IEEE Transactions on Mobile Computing (TMC)",
         year: "2022"
@@ -46,13 +52,6 @@ const publicationsData = [
         conference: "Proceedings of the ACM Conference on Information and Knowledge Management (CIKM), Demo Track",
         year: "2022",
         pages: "4921-4925"
-    },
-    {
-        title: "Human-in-the-loop Real-time Task Allocation",
-        authors: "<strong>Huiling Li</strong>, Lei Gao, Hua Wang, Mingliang Xu, Yafei Li",
-        conference: "Proceedings of the IEEE Conference on Mobile Data Management (MDM), MUST Workshop",
-        year: "2022",
-        pages: "518-523"
     }
     // Add more publication data
 ];
@@ -62,10 +61,9 @@ publicationsData.forEach(item => {
         const listItem = document.createElement('li');
         listItem.innerHTML = `
             <strong>${item.title}</strong><br>
-            Authors: ${item.authors}<br>
-            ${item.journal ? `Journal: ${item.journal}<br>` : ''}
-            ${item.conference ? `Conference: ${item.conference}<br>` : ''}
-            ${item.pages ? `Pages: ${item.pages}<br>` : ''}
+            ${item.authors}<br>
+            ${item.journal ? `${item.journal}<br>` : ''}
+            ${item.conference ? `${item.conference}<br>` : ''}
             Year: ${item.year}<br>
         `;
         publicationsList.appendChild(listItem);
