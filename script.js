@@ -23,12 +23,6 @@ const publicationsList = document.getElementById('publications-list');
 const publicationsData = [
     {
         title: "Utility-Aware Dynamic Ridesharing in Spatial Crowdsourcing",
-        authors: "<strong>Huiling Li</strong>, Xin Huang, Jianliang Xu, Yu Han, Mingliang Xu",
-        journal: "IEEE Transactions on Mobile Computing (TMC)",
-        year: "2022"
-    },
-    {
-        title: "Utility-Aware Dynamic Ridesharing in Spatial Crowdsourcing",
         authors: "Yafei Li, <strong>Huiling Li</strong>, Xin Huang, Jianliang Xu, Yu Han, Mingliang Xu",
         journal: "IEEE Transactions on Mobile Computing (TMC)",
         year: "2022"
@@ -64,7 +58,7 @@ publicationsData.forEach(item => {
             ${item.authors}<br>
             ${item.journal ? `${item.journal}<br>` : ''}
             ${item.conference ? `${item.conference}<br>` : ''}
-            Year: ${item.year}<br>
+            ${item.year}<br>
         `;
         publicationsList.appendChild(listItem);
     }
