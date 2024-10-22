@@ -66,6 +66,6 @@ publicationsData.forEach(item => {
 
 const pdfLink = document.createElement('li');
 pdfLink.innerHTML = `
-    <strong>TAMP Technical Report:</strong> <a href="papers/TAMP_technical_report.pdf" target="_blank">ICDE25.pdf</a>
+    <strong>TAMP Technical Report:</strong> <a href="paper/TAMP_technical_report.pdf" target="_blank">ICDE25.pdf</a>
 `;
 publicationsList.appendChild(pdfLink);
