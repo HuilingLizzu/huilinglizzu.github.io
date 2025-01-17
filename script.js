@@ -66,6 +66,10 @@ publicationsData.forEach(item => {
 
 const pdfLink = document.createElement('li');
 pdfLink.innerHTML = `
-    <strong>TAMP Technical Report:</strong> <a href="paper/TAMP_technical_report.pdf" target="_blank">ICDE25.pdf</a>
+    <strong>Effective Task Assignment in Mobility Prediction-Aware Spatial Crowdsourcing</strong><br>
+    <strong>Huiling Li</strong>, Yafei Li, Wei Chen, Shuo He, Mingliang Xu, Jianliang Xu<br>
+    Proceedings of the IEEE International Conference on Data Engineering (ICDE)<br>
+    2025<br>
+    <a href="paper/TAMP_technical_report.pdf" target="_blank">ICDE25.pdf</a>
 `;
 publicationsList.appendChild(pdfLink);
